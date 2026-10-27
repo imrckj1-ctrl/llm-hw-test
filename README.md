@@ -1,5 +1,7 @@
 # 大模型推理硬件自动化测试平台
 
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 按《大模型硬件自动化测试平台-产品与技术设计文档-V2.0.md》实现。Go 单二进制 + 内嵌 SQLite + Vue3 前端(静态资源内嵌),部署于测试内网。
 
 ## 构建
@@ -143,3 +145,7 @@ main
 - `internal/store/seed/corpus.json.gz`：`corpus-public-v1`，52 档；
 - `语料库/build_public_corpus.py`：可复现生成上述语料；
 - `语料库/gen_corpus.py`：业务仿真文本生成器。
+
+## 开源协议
+
+本项目源码采用 [MIT License](LICENSE) 开源。仓库中内嵌或依赖的第三方组件仍遵循其各自的原始许可证，相关权利归原权利人所有。

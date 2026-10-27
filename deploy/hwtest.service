@@ -1,0 +1,16 @@
+[Unit]
+Description=LLM Hardware Test Platform (大模型推理硬件测试平台)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=tester
+WorkingDirectory=/opt/hwtest
+ExecStart=/opt/hwtest/hwtest --addr 127.0.0.1:8080 --data /opt/hwtest/data
+Restart=always
+RestartSec=3
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target

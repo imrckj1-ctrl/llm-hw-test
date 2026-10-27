@@ -1,0 +1,35 @@
+# Dependencies and frontend build output
+node_modules/
+web/dist/
+coverage/
+
+# Release packages and generated previews
+release-*/
+render_out/
+*.docx
+*.tar
+*.tar.gz
+对比分析预览.html
+
+# Internal verification/test scripts contain environment credentials
+scripts/
+
+# Experimental/prototype material
+mockups/
+sandbox/
+
+# Corpus text bodies pending copyright confirmation.
+# Corpus generator and default question banks remain included.
+语料库/*.txt
+语料库/context_bench/*.txt
+
+# Runtime data
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+
+
+__pycache__/
+*.pyc

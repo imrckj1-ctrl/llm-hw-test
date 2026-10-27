@@ -33,3 +33,6 @@ data/
 
 __pycache__/
 *.pyc
+
+# Public sample report
+!docs/reports/*.docx
